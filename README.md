@@ -1,10 +1,10 @@
 # getip2
-========
+
 Gets your public IP Address
 
 
 # Usage
-========
+
 ``` Python
 >>> import getip
 >>> ip = getip.get()
@@ -14,7 +14,7 @@ Gets your public IP Address
 
 
 # Installation
-===============
+
 ```
 -$ pip install getip2
 ```
