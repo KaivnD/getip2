@@ -1,0 +1,8 @@
+README.txt
+getip.py
+setup.cfg
+setup.py
+getip2.egg-info/PKG-INFO
+getip2.egg-info/SOURCES.txt
+getip2.egg-info/dependency_links.txt
+getip2.egg-info/top_level.txt
