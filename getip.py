@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 #
 # Gets your public IP address
-#
-# Regex legally stolen from phoemur/ipgetter
 
 import requests
 import random
