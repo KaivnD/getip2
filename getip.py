@@ -6,19 +6,18 @@ import requests
 import random
 import re
 
-servers = [ 'http://ipecho.net/plain', 'http://websiteipaddress.com/WhatIsMyIp',
-            'http://getmyipaddress.org/', 'http://myexternalip.com/raw',
-            'http://www.canyouseeme.org/', 'http://www.trackip.net/',
-            'http://icanhazip.com/', 'http://www.ipchicken.com/',
-            'http://whatsmyip.net/', 'http://checkmyip.com/',
-            'http://www.lawrencegoetz.com/programs/ipinfo/',
-            'http://ip-lookup.net/', 'http://www.myip.ru',
-            'http://ipgoat.com/', 'http://www.myipnumber.com/my-ip-address.asp',
-            'http://formyip.com/', 'https://check.torproject.org/',
-            'http://www.displaymyip.com/', 'http://checkip.dyndns.com/',
-            'http://myexternalip.com/', 'http://www.ip-adress.eu/',
-            'https://wtfismyip.com/text', 'http://httpbin.org/ip',
-            'http://checkip.amazonaws.com', 'http://get.youripfast.com/']
+servers = [ 'http://ipecho.net/plain',          'http://websiteipaddress.com/WhatIsMyIp',
+            'http://getmyipaddress.org/',       'http://myexternalip.com/raw',
+            'http://www.canyouseeme.org/',      'http://www.trackip.net/',
+            'http://icanhazip.com/',            'http://www.ipchicken.com/',
+            'http://whatsmyip.net/',            'http://checkmyip.com/',
+            'http://ip-lookup.net/',            'http://www.myip.ru',
+            'http://ipgoat.com/',               'http://www.myipnumber.com/my-ip-address.asp',
+            'http://formyip.com/',              'https://check.torproject.org/',
+            'http://www.displaymyip.com/',      'http://checkip.dyndns.com/',
+            'http://myexternalip.com/',         'http://www.ip-adress.eu/',
+            'https://wtfismyip.com/text',       'http://httpbin.org/ip',
+            'http://checkip.amazonaws.com',     'http://get.youripfast.com/']
 
 
 def get():
