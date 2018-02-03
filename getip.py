@@ -11,7 +11,7 @@ servers = [ 'http://ipecho.net/plain',          'http://websiteipaddress.com/Wha
             'http://www.canyouseeme.org/',      'http://www.trackip.net/',
             'http://icanhazip.com/',            'http://www.ipchicken.com/',
             'http://whatsmyip.net/',            'http://checkmyip.com/',
-            'http://ip-lookup.net/',            'http://www.myip.ru',
+            'http://ip-lookup.net/',            'https://wtfismyip.com/',
             'http://ipgoat.com/',               'http://www.myipnumber.com/my-ip-address.asp',
             'http://formyip.com/',              'https://check.torproject.org/',
             'http://www.displaymyip.com/',      'http://checkip.dyndns.com/',
