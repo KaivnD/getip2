@@ -23,12 +23,9 @@ servers = [ 'http://ipecho.net/plain',          'http://websiteipaddress.com/Wha
 def get():
     page = get_page(random.choice(servers))
 
-    regex = ['(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.',
-             '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.',
-             '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.',
-             '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)']
+    regex = 4 * '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.'
 
-    ip = re.search(('').join(regex), str(page.content))
+    ip = re.search(regex.rstrip('\.'), str(page.content))
 
     if ip is not None and ip.group is not None:
         return ip.group(0)
