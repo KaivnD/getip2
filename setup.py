@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='getip2',
-    version='1.0',
+    version='1.2',
     description='Gets your public IP Address',
     author='orsewithnoname',
     author_email='lundy11111@gmail.com',
