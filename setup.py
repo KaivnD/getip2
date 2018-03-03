@@ -6,7 +6,7 @@ setup(
     name='getip2',
     version='1.2',
     description='Gets your public IP Address',
-    author='orsewithnoname',
+    author='JG',
     author_email='lundy11111@gmail.com',
-    url='https://github.com/orsewithnoname/getip2',
+    url='https://github.com/4A47/getip2',
     py_modules=['getip'])
