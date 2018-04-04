@@ -2,7 +2,10 @@
 #
 # Gets your public IP address
 
-import urllib.request, urllib.error
+try:
+    import urllib.request as urlrequest, urllib.error
+except ImportError:
+    import urllib2 as urlrequest
 import random
 import re
 
@@ -36,10 +39,10 @@ def get():
 
 def get_page(url):
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        page = urllib.request.urlopen(req)
+        req = urlrequest.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        page = urlrequest.request.urlopen(req)
         return page.read()
-    except urllib.error.HTTPError:
+    except (urllib.error.HTTPError, urllib2.HTTPError):
         return get_page(random.choice(servers))
 
 
