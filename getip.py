@@ -39,10 +39,10 @@ def get():
 
 def get_page(url):
     try:
-        req = urlrequest.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        page = urlrequest.request.urlopen(req)
+        req = urlrequest.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        page = urlrequest.urlopen(req)
         return page.read()
-    except (urllib.error.HTTPError, urllib2.HTTPError):
+    except (urllib.error.HTTPError, urlrequest.HTTPError):
         return get_page(random.choice(servers))
 
 
