@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Gets your public IP address
+# Gets your public IP address from a random server
 
 try:
     import urllib.request as urlrequest, urllib.error
