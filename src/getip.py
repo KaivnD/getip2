@@ -6,7 +6,7 @@ try:
     import urllib.request as urlrequest, urllib.error
 except ImportError:
     import urllib2 as urlrequest
-import random
+from random import choice
 import re
 
 servers = [ 
@@ -23,9 +23,8 @@ servers = [
     'https://wtfismyip.com/text',       'http://httpbin.org/ip'
 ]
 
-
 def get():
-    page = get_page(random.choice(servers))
+    page = get_page(choice(servers))
 
     regex = 4 * '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.'
 
@@ -40,10 +39,9 @@ def get():
 def get_page(url):
     try:
         req = urlrequest.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        page = urlrequest.urlopen(req)
-        return page.read()
+        return urlrequest.urlopen(req).read()
     except (urllib.error.HTTPError, urlrequest.HTTPError):
-        return get_page(random.choice(servers))
+        return get_page(choice(servers))
 
 
 if __name__ == '__main__':
