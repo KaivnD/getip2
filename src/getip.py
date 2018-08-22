@@ -25,9 +25,7 @@ servers = [
 
 def get():
     page = get_page(choice(servers))
-
     regex = 4 * '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.'
-
     ip = re.search(regex.rstrip('\.'), str(page))
 
     if ip and ip.group:
