@@ -7,7 +7,7 @@ try:
 except ImportError:
     import urllib2 as urlrequest
 from random import choice
-import re
+from re import search
 
 servers = [ 
     'http://ipecho.net/plain',          'http://websiteipaddress.com/WhatIsMyIp',
