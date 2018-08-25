@@ -2,9 +2,9 @@
 #
 # Gets your public IP address from a random server
 
-try:
+try: # Python 3
     import urllib.request as urlrequest, urllib.error
-except ImportError:
+except ImportError: # Python 2
     import urllib2 as urlrequest
 from random import choice
 from re import search
