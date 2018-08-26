@@ -33,14 +33,12 @@ def get():
     else:
         return get()
 
-
 def get_page(url):
     try:
         req = urlrequest.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         return urlrequest.urlopen(req).read()
     except (urllib.error.HTTPError, urlrequest.HTTPError):
         return get_page(choice(servers))
-
 
 if __name__ == '__main__':
     get()
